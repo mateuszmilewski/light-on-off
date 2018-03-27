@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        height: 100px;
+        width: 200px;
+      }
+    </style>
+  </head>
+	<body>
+
+	<button 
+		onclick="foobar1()">
+			OFF!
+	</button>
+
+	<button 
+		onclick="foobar2()">
+			ON!
+	</button>
+
+  
+  <br><br>
+	<img id="myImage"src="obraz_off.jpg">
+
+
+	<script>
+		function foobar1() {
+		    var image = document.getElementById('myImage');
+			image.src = "obraz_off.jpg";
+		}
+
+		function foobar2() {
+		    var image = document.getElementById('myImage');
+			image.src = "obraz_on.jpg";
+		}
+	</script>
+
+	</body>
+</html>
